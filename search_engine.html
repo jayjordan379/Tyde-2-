@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="search_engine.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select search engine</title>
+</head>
+
+<body>
+  <header>
+    <big style="color: white;">
+      Select search engine
+    </big>
+
+    <img src="/back.png" alt="back" width="80" height="80">
+  </header>
+
+  <hr>
+  <!-- bing-->
+  <label for="bing" style="color: white;">
+
+
+    <div class="bing">Bing
+      <input type="radio" id="bing" name="engine" value="bing">
+
+    </div>
+
+
+  </label>
+
+
+  <!-- google -->
+  <label for="google" style="color: white;">
+
+
+    <div class="google">Google
+      <input type="radio" id="google" name="engine" value="google">
+    </div>
+  </label>
+
+  <!-- yahoo -->
+  <label for="yahoo" style="color: white;">
+
+
+    <div class="yahoo">Yandex
+      <input type="radio" id="yahoo" name="engine" value="Yandex">
+
+    </div>
+
+
+  </label>
+
+  <!-- duck duck go -->
+  <label for="duck" style="color: white;">
+
+
+    <div class="duck" name="engine">Ask.com
+      <input type="radio" id="duck" name="engine" value="ask">
+
+    </div>
+    <label for="youTube" style="color: white;">
+
+
+      <div class="youtube" name="engine">YouTube
+        <input type="radio" id="duck" name="engine" value="youtube">
+
+      </div>
+
+    </label>
+
+    <label for="netscape" style="color: white;">
+
+
+      <div class="netscape" name="engine">Netscape
+        <input type="radio" id="duck" name="engine" value="netscape">
+
+      </div>
+
+      <center>
+
+        <button class="btn" onclick="getValue()">Set</button>
+      </center>
+      <br>
+      <script>
+        var radios = document.getElementsByName('engine');
+
+        function getValue() {
+          var number = radios.length;
+
+          for (var i = 0; i < number; i++) {
+            // Tab to edit
+            if (radios[i].checked) {
+              localStorage.setItem('value', radios[i].value);
+    history.back();
+            }
+          }
+        }
+      </script>
+</body>
+
+</html>

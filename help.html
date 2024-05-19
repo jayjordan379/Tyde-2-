@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+    background: url("showcase.jpg");
+
+}
+
+#word{
+  width: 20%;
+  height: 20vw;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.word {
+  font-size: 10vw;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  position: relative;
+  top: 10%;
+  color: darkorange;
+  /*text-shadow: 2px 2px 4px #E48813, -1px -2px 3px #EAE9EC;*/
+  float: left;
+  font-weight: bold;
+  left: 20%;
+}
+
+.head {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  position: absolute;
+  height: 85px;
+  top: 0px;
+}
+.cover{
+  position: relative;
+  top: 20vw;
+}
+img{
+  width: 80%;
+  height: 80vw;
+}
+.footer {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background: linear-gradient(to top left, #BB2A2A, #E48813);
+  text-align: center;
+  color: white;
+  position: relative;
+   bottom: 0px;
+}
+#progressBar {
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  background: grey;
+  display: none;
+}
+
+.bar {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background: orangered;
+  animation-name: move;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+#progressBar:target {
+  display: block;
+}
+#para_one, #para_two{
+  display: none;
+}
+#para_one:target{
+  display: block;
+}
+#para_two:target{
+  display: block;
+}
+
+  </style>
+
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="dropdown.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help page</title>
+</head>
+
+<body>
+  <!-- header -->
+
+
+  <div id="progressBar">
+    <div class="bar"></div>
+  </div>
+
+  <section class="whole">
+    <div class="cover">
+      <hr class="hr">
+
+    <ol>
+      <li>
+        <h3>
+          <a href="#para_one">
+            <big>
+              How to use the search engine
+            </big>
+          </a>
+        </h3>
+      </li>
+
+      <div id="para_one">
+        <p>
+          The browser can be used in two ways;
+        </p>
+        <ul>
+          <li>
+            <b>
+              Website browsing:
+            </b>
+          </li>
+        </ul>
+        <p>
+          This browser is capable of enabling the user to navigate through multiple website on the internet.
+        </p>
+        <p>
+          All that is needed is to insert the URL address of where you want the browser to take you and the website will be opened.
+        </p>
+        <p>
+          For example, <b><i>"http://www.google.com"</i></b>. This URL address will tell the browser to take you to <b>www.google.com</b>
+          which is the google website.
+        </p>
+        <p>
+          The URL address should be written inside the provided input bar and then the search button is pressed to make the search.
+        </p>
+        <img src="InShot_20240513_142600503.gif" alt="sample.gif">
+
+        <hr>
+        <ul>
+          <li>
+            <b>
+              Online searching:
+            </b>
+          </li>
+        </ul>
+
+        <p>
+          The browser also has an inbuild search engine that can be used for search purposes abit something like <b>google</b>.
+        </p>
+        <p>
+          To access the search engine, simply just write the info in the input bar but ignoring the <b><i>"http://"</i></b> part. the browser will automatically know and send the information to the search engine selected for further review of results.
+        </p>
+
+      </div>
+
+
+      <li>
+        <h3>
+          <a href="#para_two">
+            <big>
+              Why are some websites not working in the browser?
+            </big>
+          </a>
+        </h3>
+      </li>
+
+    <div id="para_two">
+      <p>
+        Websites such as <b>google</b>, <b>ask.com</b> and others are not able to work inside of another website. This is why the development of the browser used to open <b>
+          google
+        </b> and other websites full screen space
+        though the user will no longer be able to use the browser services anymore till they return to the main browser.
+      </p>
+      <p>
+        Even so, there are some websites and search engines that can really work inside of the browser such as <b>Bing</b> serch engine and <b>
+          yandex
+        </b> search engine, <b>tubidy.com</b> and others.
+      </p>
+      <p>
+        Luckily in order to solve this, the development of the browser has a special feature in the <b>MENU</b> dropdown.
+      </p>
+      <p>
+        All that has to be done is to click the menu icon at the top right corner of the browser and choose the <b><i>Open in new tab</i></b> option to open the site.
+      </p>
+      <p>
+        However, this feature is only allowed in the home page.
+      </p>
+      <p>
+          <center>
+            <p>
+              For more inquiries, please visit our <a href="info.html">About us page</a>.
+          </center>
+      </p>
+    </div>
+    
+        </ol>
+</div>
+  
+    <div class="head">
+    <span>
+      <img src="logo5_9_232933 (1).png" alt="logo.png" id="word">
+
+      <span class="word">
+        Tyde
+      </span>
+    </span>
+  </div>
+
+  <!-- dropdown and progress bar-->
+  <section class="dropdown">
+
+    <a href="#drop_down">
+      <button class="menu">
+        <i class="fa-solid fa-bars"></i> </button>
+      <span style="color: white;">menu</span>
+    </a>
+    <div id="drop_down">
+      <a href="#progressBar">
+        <div class="one" onclick="timee1()">
+          Home
+        </div>
+      </a>
+
+
+      <a href="#progressBar">
+        <div class="three" onclick="timee2()">
+          Search engine
+        </div>
+      </a>
+      <a href="#progressBar">
+        <div class="four" onclick="timee3()">
+          About us
+        </div>
+      </a>
+             <a href="#progressBar">
+         <div class="five" onclick="timee4()">
+           Help
+         </div>
+       </a>
+      <a href="">
+        <div class="back" onclick="window.history.go(-2);">
+          Back
+        </div>
+      </a>
+    </div>
+  </section>
+<br><br><br><br>
+
+  <div class="footer">
+
+  </p>
+    all rights reserved|2024©
+  </div>
+    </section>
+<script src="main.js"></script>
+</body>
+
+</html>
